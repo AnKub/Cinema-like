@@ -19,6 +19,8 @@ headers: {
         const fetchMovies = async () => {
           try{
             const endpoint = `${API_BASE_URL}/discover/movie?sort_by=popularity.desc`
+            const response = await fetch(endpoint, API_OPTIONS);
+            alert (response)
           } catch (error){
             console.log(`Error fetching movie error: ${error}`);
             setErrorMessage('Error fetching movies, Please try again later.');
@@ -26,7 +28,7 @@ headers: {
         }
 
 useEffect(()=>{
-
+fetchMovies()
 }, [])
 
   return (
