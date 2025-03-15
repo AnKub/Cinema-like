@@ -1,22 +1,19 @@
-const Card = ({title}) => {
-  return (
-    <div className="card">
-      <h2>{title}</h2>
-    </div>
-  )
-}
+import React from 'react'
 
 const App = () => {
-
-
   return (
-    <div className="card-container">
-    
-    <Card  title='starwars' retirng={5} isCool={true}/>
-    <Card  title='Avatar'/>
-    <Card  title='The Lion King'/>
-  </div>
-  
+    <main>
+      <div className="pattern"/>
+      <div className="wrapper">
+        <header>
+          <h1>Find <span className='text-gradient'>Movies</span> You Enjo without the Hassle</h1>
+        </header>
+
+        <p>Search</p>
+
+      </div>
+
+    </main>
   )
 }
 
