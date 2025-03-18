@@ -6,12 +6,12 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   server:{
     proxy:{
-      '/api':{
+      '/api': {
         target:
         'https://api.themoviedb.org/3',
         changeOrigin:true,
         rewrite:(path)=>
-          path.replace(/^\/api/,''),
+          path.replace(/^\/api/, ''),
       },
     },
   },
