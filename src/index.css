@@ -5,18 +5,12 @@
 
 @theme {
   --color-primary: #000405;
-
   --color-light-100: #cecefb;
   --color-light-200: #a8b5db;
-
   --color-gray-100: #9ca4ab;
-
-  --color-dark-100: #0f0d23;
-
+  --color-dark-100: #011014;
   --font-dm-sans: DM Sans, sans-serif;
-
   --breakpoint-xs: 480px;
-
   --background-image-hero-pattern: url("/hero-bg.png");
 }
 
@@ -103,7 +97,7 @@
 
   .movie-card {
     @apply bg-dark-100 p-5 rounded-2xl shadow-inner shadow-light-100/10;
-
+    
     & img {
       @apply rounded-lg h-auto w-full;
     }
@@ -143,7 +137,10 @@
 }
 
 @utility text-gradient {
-  @apply bg-linear-to-r from-[#D6C7FF] to-[#2b6979] bg-clip-text text-transparent;
+  @apply bg-linear-to-r from-[#D6C7FF] to-[#022832] bg-clip-text text-transparent;
+}
+@utility text-gradient1 {
+  @apply bg-linear-to-r from-[#022832] to-[#D6C7FF] bg-clip-text text-transparent;
 }
 
 @utility fancy-text {
